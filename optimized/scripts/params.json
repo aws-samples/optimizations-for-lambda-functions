@@ -1,0 +1,8 @@
+{
+    "lambdaARN": "arn:aws:lambda:region:account:function:LambdaFunctionName",
+    "powerValues": [128, 256, 512, 1024, 2048, 3072, 4096],
+    "num": 5,
+    "payload": {},
+    "parallelInvocation": true,
+    "strategy": "balanced"
+}

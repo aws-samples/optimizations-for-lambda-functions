@@ -1,0 +1,45 @@
+{
+  "name": "rds-proxy",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "rds-proxy": "bin/rds-proxy.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "analyse": "esbuild --bundle ./lambda/getData.ts --external:@aws-sdk --outfile=out.js --target=es2020 --tree-shaking=true --platform=node --minify --analyze"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.92.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.92.0-alpha.0",
+    "@aws-cdk/aws-ec2": "^1.204.0",
+    "@k-foss/ts-esnode": "^2.0.3",
+    "@types/aws-lambda": "^8.10.83",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.6.0",
+    "aws-cdk": "2.92.0",
+    "aws-cdk-lib": "2.92.0",
+    "esbuild": "^0.19.3",
+    "esbuild-plugin-polyfill-node": "^0.3.0",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.1.6"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^1.12.1",
+    "@aws-lambda-powertools/metrics": "^1.12.1",
+    "@aws-lambda-powertools/tracer": "^1.12.1",
+    "@aws-sdk/client-ssm": "^3.418.0",
+    "@middy/core": "^4.6.2",
+    "aws-sdk-js-v3-rds-signer": "^1.0.1",
+    "constructs": "^10.0.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1",
+    "source-map-support": "^0.5.21"
+  }
+}

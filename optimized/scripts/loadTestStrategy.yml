@@ -1,0 +1,23 @@
+config:
+
+  target: URL to test HERE
+  phases:
+    - duration: 20
+      arrivalRate: 1
+      rampTo: 20
+      name: 1 to 20 RPS
+    - duration: 50
+      arrivalRate: 20
+      rampTo: 100
+      name: to 100 RPS
+  plugins:
+    apdex: {}
+  apdex:
+    threshold: 100
+scenarios:
+  - flow:
+      - get:
+          url: "/"
+          expect:
+          - statusCode: 200
+          - contentType: json
