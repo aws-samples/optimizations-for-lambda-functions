@@ -22,7 +22,7 @@ solution, where the execution time is now ~9ms.
 
 ## More Details
 
-if you are interested to learn more about the thought process behind the decisions listed below, we highly encourage to read the related [blog post](https://community.aws/) to this example
+if you are interested to learn more about the thought process behind the decisions listed below, we highly encourage to read the related [blog post](https://community.aws/posts/improved-lambda-warm-start-speed-95) to this example
 
 ## Pre-requisites
 
