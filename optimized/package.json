@@ -22,7 +22,7 @@
     "@types/aws-lambda": "^8.10.83",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.6.0",
-    "artillery": "^2.0.0-37",
+    "artillery": "^2.0.24",
     "aws-cdk": "^2.108.0",
     "aws-cdk-lib": "^2.108.0",
     "esbuild": "^0.19.3",
